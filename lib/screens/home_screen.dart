@@ -331,30 +331,31 @@ _nerbyHotels(int indx) {
                       Icons.star,
                       color: Colors.yellow,
                     ),
-                    Text(
-                      '4.9',
-                      style:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(
-                      width: 90,
-                    ),
-                    RichText(
-                      text: TextSpan(
-                        text: '\$120',
+                    Expanded(
+                      child: Text(
+                        '4.9',
                         style: TextStyle(
-                            fontSize: 15,
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold),
-                        children: <TextSpan>[
-                          TextSpan(
-                            text: '/night',
-                            style: TextStyle(
-                              color: Colors.grey,
-                              decorationStyle: TextDecorationStyle.wavy,
+                            fontSize: 15, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Expanded(
+                      child: RichText(
+                        text: TextSpan(
+                          text: '\$120',
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold),
+                          children: <TextSpan>[
+                            TextSpan(
+                              text: '/night',
+                              style: TextStyle(
+                                color: Colors.grey,
+                                decorationStyle: TextDecorationStyle.wavy,
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     )
                   ],
